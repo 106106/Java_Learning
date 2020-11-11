@@ -1,0 +1,100 @@
+My goal in writing this book was to give an account of the history of many of the basic concepts, results, and theories of abstract algebra, an account that would be useful for teachers of relevant courses, for their students, and for the broader mathematical public.
+The core of a first course in abstract algebra deals with groups, rings, and fields. These are the contents of Chapters 2, 3, and 4, respectively. But abstract algebra grew out of an earlier classical tradition, which merits an introductory chapter in its own right (Chapter 1). In this tradition, which developed before the nineteenth century, “algebra” meant the study of the solution of polynomial equations. In the twenti- eth century it meant the study of abstract, axiomatic systems such as groups, rings, and fields. The transition from “classical” to “modern” occurred in the nineteenth century. Abstract algebra came into existence largely because mathematicians were unable to solve classical (pre-nineteenth-century) problems by classical means. The classical problems came from number theory, geometry, analysis, the solvability of polynomial equations, and the investigation of properties of various number systems. A major theme of this book is to show how “abstract” algebra has arisen in attempts to solve some of these “concrete” problems, thus providing confirmation of Whitehead’s paradoxical dictum that “the utmost abstractions are the true weapons with which to control our thought of concrete fact.” Put another way: there is nothing so practical as a good theory.
+Although linear algebra is not normally taught in a course in abstract algebra, its evolution has often been connected with that of groups, rings, and fields. And, of course, vector spaces are among the fundamental notions of abstract algebra. This warrants a (short) chapter on the history of linear algebra (Chapter 5).
+Abstract algebra is essentially a creation of the nineteenth century, but it became an independent and flourishing subject only in the early decades of the twentieth, largely through the pioneering work of Emmy Noether, who has been called “the father” of abstract algebra. Thus the chapter on Noether’s algebraic work (Chapter 6).
+It is my firm belief, buttressed by my own teaching experience, that the history of mathematics can make an important contribution to our—teachers’ and students’— understanding and appreciation of mathematics. It can act as a useful integrating
+xii Preface
+component in the teaching of any area of mathematics, and can provide motivation and perspective. History points to the sources of the subject, hence to some of its central notions. It considers the context in which the originator of an idea was working in order to bring to the fore the “burning problem” which he or she was trying to solve.
+The biologist Ernest Haeckel’s fundamental principle that “ontogeny recapitu- lates phylogeny”—that the development of an individual retraces the evolution of its species—was adapted by George Polya, as follows: “Having understood how the human race has acquired the knowledge of certain facts or concepts, we are in a bet- ter position to judge how [students] should acquire such knowledge.” This statement is but one version of the so-called “genetic principle” in mathematics education. As Polya notes, one should view it as a guide to, not a substitute for, judgment. Indeed, it is the teacher who knows best when and how to use historical material in the classroom, if at all. Chapter 7 describes a course in abstract algebra inspired by history. I have taught it in an in-service Master’s Program for high school teachers of mathematics, but it can be adapted to other types of algebra courses.
+In each of the above chapters I mention the major contributors to the development of algebra. To emphasize the human face of the subject, I have included a chapter on the lives and works of six of its major creators: Cayley, Dedekind, Galois, Gauss, Hamilton, and Noether (Chapter 8). This is a substantial chapter—in fact, the longest in the book. Each of the biographies is a mini-essay, since I wanted to go beyond a mere listing of names, dates, and accomplishments.
+The concepts of abstract algebra did not evolve independently of one another. For example, field theory and commutative ring theory have common sources, as do group theory and field theory. I wanted, however, to make the chapters independent, so that a reader interested in finding out about, say, the evolution of field theory would not need to read the chapter on the evolution of ring theory. This has resulted in a certain amount of repetition in some of the chapters.
+The book is not meant to be a primer of abstract algebra from which students would learn the elements of groups, rings, or fields. Neither abstract algebra nor its history are easy subjects. Most students will probably need the guidance of a teacher on a first reading.
+To enhance the usefulness of the book, I have included many references, for the most part historical. For ease of use, they are placed at the end of each chap- ter. The historical references are mainly to secondary sources, since these are most easily accessible to teachers and students. Many of these secondary sources contain references to primary sources.
+The book is a far-from-exhaustive account of the history of abstract algebra. For example, while I devote a mere twenty pages or so to the history of groups, an entire book has been published on the topic. My main aim was to give an overview of many of the basic ideas of abstract algebra taught in a first course in the subject. For readers who want to pursue the subject further, I have indicated in the body of each chapter where additional material can be found. Detection of errors in the historical account will be gratefully acknowledged.
+The primary audience for the book, as I see it, is teachers of courses in abstract algebra. I have noted some of the uses they may put it to. The book can also be used
+
+in courses on the history of mathematics. And it may appeal to algebraists who want to familiarize themselves with the history of their subject, as well as to the broader mathematical community.
+Finally, I want to thank Ann Kostant, Elizabeth Loew, and Avanti Paranjpye of Birkhäuser for their outstanding cooperation in seeing this book to completion.
+Israel Kleiner
+Toronto, Ontario May 2007
+Preface xiii
+
+ Permissions
+Grateful acknowledgment is hereby given for permission to reprint in full or in part, with minor changes, the following:
+I. Kleiner, “Algebra.” History of Modern Science and Mathematics, Scrib- ner’s, 2002, pp. 149–167. Reprinted with permission of Thomson Learning: www.thomsonrights.com. (Used in Chapters 1 and 5.)
+I. Kleiner, “The evolution of group theory: a brief survey.” Mathematics Magazine 6 (1986) 195–215. Reprinted with permission of the Mathematical Association of America. (Used in Chapter 2.)
+I. Kleiner, “From numbers to rings: the early history of ring theory.” Elemente der Mathematik 53 (1998) 18–35. Reprinted with permission of Birkhäuser. (Used in Chapter 3.)
+I. Kleiner, “Field theory: from equations to axiomatization,” Parts I and II. American Mathematical Monthly 106 (1999) 677–684 and 859–863. Reprinted with permission of the Mathematical Association of America. (Used in Chapter 4.)
+I. Kleiner, “Emmy Noether: highlights of her life and work.” L’Enseignement Mathématique 38 (1992) 103–124. (Used in Chapters 6 and 8.)
+I. Kleiner, “A historically focused course in abstract algebra.” Mathematics Magazine 71 (1998) 105–111. Reprinted with permission of the Mathematical Association of America. (Used in Chapter 7.)
+
+1
+History of Classical Algebra
+ 1.1 Early roots
+For about three millennia, until the early nineteenth century, “algebra” meant solving polynomial equations, mainly of degree four or less. Questions of notation for such equations, the nature of their roots, and the laws governing the various number systems to which the roots belonged, were also of concern in this connection. All these matters became known as classical algebra. (The term “algebra” was only coined in the ninth century AD.) By the early decades of the twentieth century, algebra had evolved into the study of axiomatic systems. The axiomatic approach soon came to be called modern or abstract algebra. The transition from classical to modern algebra occurred in the nineteenth century.
+Most of the major ancient civilizations, the Babylonian, Egyptian, Chinese, and Hindu, dealt with the solution of polynomial equations, mainly linear and quadratic equations. The Babylonians (c. 1700 BC) were particularly proficient “algebraists.” They were able to solve quadratic equations, as well as equations that lead to quadratic equations, for example x + y = a and x2 + y2 = b, by methods similar to ours. The equations were given in the form of “word problems.” Here is a typical example and its solution:
+I have added the area and two-thirds of the side of my square and it is 0;35 [35/60 in sexagesimal notation]. What is the side of my square?
+In modern notation the problem is to solve the equation x2 + (2/3)x = 35/60. The solution given by the Babylonians is:
+You take 1, the coefficient. Two-thirds of 1 is 0;40. Half of this, 0;20, you multiply by 0;20 and it [the result] 0;6,40 you add to 0;35 and [the result] 0;41,40 has 0;50 as its square root. The 0;20, which you have multiplied by itself, you subtract from 0;50, and 0;30 is [the side of] the square.
+The instructions for finding the solution can be expressed in modern nota- tion as x = 􏰃[(0;40)/2]2 + 0;35 − (0;40)/2 = √0;6,40 + 0;35 − 0; 20=√0;41,40−0;20=0;50−0;20=0;30.
+   
+2 1 HistoryofClassicalAlgebra
+􏰃
+ (a/2)2 + b − a/2 to The following points about Babylonian algebra are important to note:
+(a) There was no algebraic notation. All problems and solutions were verbal.
+(b) The problems led to equations with numerical coefficients. In particular, there was no such thing as a general quadratic equation, ax2 + bx + c = 0, with a, b,
+and c arbitrary parameters.
+(c) The solutions were prescriptive: do such and such and you will arrive at the
+answer. Thus there was no justification of the procedures. But the accumulation of example after example of the same type of problem indicates the existence of some form of justification of Babylonian mathematical procedures.
+(d) The problems were chosen to yield only positive rational numbers as solutions. Moreover, only one root was given as a solution of a quadratic equation. Zero, negative numbers, and irrational numbers were not, as far as we know, part of the Babylonian number system.
+(e) Theproblemswereoftenphrasedingeometriclanguage,buttheywerenotprob- lems in geometry. Nor were they of practical use; they were likely intended for the training of students. Note, for example, the addition of the area to 2/3 of the side of a square in the above problem. See [2], [6], [14], [18] for aspects of Babylonian algebra.
+The Chinese (c. 200 BC) and the Indians (c. 600 BC) advanced beyond the Babylo- nians (the dates for both China and India are very rough). For example, they allowed negative coefficients in their equations (though not negative roots), and admitted two roots for a quadratic equation. They also described procedures for manipulating equa- tions, but had no notation for, nor justification of, their solutions. The Chinese had methods for approximating roots of polynomial equations of any degree, and solved systems of linear equations using “matrices” (rectangular arrays of numbers) well before such techniques were known in Western Europe. See [7], [10], [18].
+1.2 The Greeks
+The mathematics of the ancient Greeks, in particular their geometry and number theory, was relatively advanced and sophisticated, but their algebra was weak. Euclid’s great work Elements (c. 300 BC) contains several parts that have been interpreted by historians, with notable exceptions (e.g., [14, 16]), as algebraic. These are geometric propositions that, if translated into algebraic language, yield algebraic results: laws of algebra as well as solutions of quadratic equations. This work is known as geometric algebra.
+For example, Proposition II.4 in the Elements states that “If a straight line be cut at random, the square on the whole is equal to the square on the two parts and twice the rectangle contained by the parts.” If a and b denote the parts into which the straight line is cut, the proposition can be stated algebraically as (a + b)2 = a2 + 2ab + b2.
+These instructions amount to the use of the formula x =
+solve the equation x2 + ax = b. This is a remarkable feat. See [1], [8].
+
+Proposition II.11 states: “To cut a given straight line so that the rectangle contained by the whole and one of the segments is equal to the square on the remaining segment.” It asks, in algebraic language, to solve the equation a(a − x) = x2. See [7, p. 70].
+Note that Greek algebra, such as it is, speaks of quantities rather than numbers. Moreover, homogeneity in algebraic expressions is a strict requirement; that is, all terms in such expressions must be of the same degree. For example, x2 + x = b2 would not be admitted as a legitimate equation. See [1], [2], [18], [19].
+A much more significant Greek algebraic work is Diophantus’ Arithmetica (c. 250 AD). Although essentially a book on number theory, it contains solutions of equations in integers or rational numbers. More importantly for progress in algebra, it introduced a partial algebraic notation—a most important achievement: ς denoted an unknown, 􏰀 negation, íσ equality, 􏰁σ the square of the unknown, Kσ its cube, and M the absence of the unknown (what we would write as x0). For example, x3 −2x2 +10x −1 = 5 would be written as Kσ αςí􏰀􏰁σ βMαíσMε (numbers were denoted by letters, so that, for example, α stood for 1 and ε for 5; moreover, there was no notation for addition, thus all terms with positive coefficients were written first, followed by those with negative coefficients).
+Diophantus made other remarkable advances in algebra, namely:
+(a) Hegavetwobasicrulesforworkingwithalgebraicexpressions:thetransferofa term from one side of an equation to the other, and the elimination of like terms from the two sides of an equation.
+(b) Hedefinednegativepowersofanunknownandenunciatedthelawofexponents, xmxn =xm+n,for−6≤m,n,m+n≤6.
+(c) He stated several rules for operating with negative coefficients, for example: “deficiency multiplied by deficiency yields availability” ((−a)(−b) = ab).
+(d) He did away with such staples of the classical Greek tradition as (i) giving a
+geometric interpretation of algebraic expressions, (ii) restricting the product of terms to degree at most three, and (iii) requiring homogeneity in the terms of an algebraic expression. See [1], [7], [18].
+1.3 Al-Khwarizmi
+Islamic mathematicians attained important algebraic accomplishments between the ninth and fifteenth centuries AD. Perhaps foremost among them was Muhammad ibn- Musa al-Khwarizmi (c. 780–850), dubbed by some “the Euclid of algebra” because he systematized the subject (as it then existed) and made it into an independent field of study. He did this in his book al-jabr w al-muqabalah. “Al-jabr” (from which stems our word “algebra”) denotes the moving of a negative term of an equation to the other side so as to make it positive, and “al-muqabalah” refers to cancelling equal (positive) terms on both sides of an equation. These are, of course, basic procedures for solving polynomial equations. Al-Khwarizmi (from whose name the term “algorithm” is derived) applied them to the solution of quadratic equations. He classified these into fivetypes:ax2 =bx,ax2 =b,ax2 +bx=c,ax2 +c=bx,andax2 =bx+c.This
+1.3 Al-Khwarizmi 3
+
+4 1 HistoryofClassicalAlgebra
+categorization was necessary since al-Khwarizmi did not admit negative coefficients or zero. He also had essentially no notation, so that his problems and solutions were expressed rhetorically. For example, the first and third equations above were given as: “squares equal roots” and “squares and roots equal numbers” (an unknown was called a “root”). Al-Khwarizmi did offer justification, albeit geometric, for his solution procedures. See [13], [17].
+Muhammad al-Khwarizmi (ca 780–850)
+The following is an example of one of his problems with its solution. [7, p. 245]: “What must be the square, which when increased by ten of its roots amounts to thirty- nine?” (i.e., solve x2 + 10x = 39).
+Solution: “You halve the number of roots [the coefficient of x], which in the
+present instance yields five. This you multiply by itself; the product is twenty-five.
+Add this to thirty nine; the sum is sixty-four. Now take the root of this, which is eight,
+and subtract from it half the number of the roots, which is five; the remainder is three.
+This is the root of the square which you sought.” (Symbolically, the prescription is:
+[(1/2) × 10]2 + 39 − (1/2) × 10.)
+Here is al-Khwarizmi’s justification: Construct the gnomon as in Fig. 1, and
+“complete” it to the square in Fig. 2 by the addition of the square of side 5. The resulting squarehaslengthx+5.Butitalsohaslength8,sincex2+10x+52 =39+25=64. Hence x = 3.
+Now a brief word about some contributions of mathematicians of Western Europe of the fifteenth and sixteenth centuries. Known as “abacists” (from “abacus”) or “cos- sists” (from “cosa,” meaning “thing” in Latin, used for the unknown), they extended,
+ 􏰃
+ 
+5
+x2
+x
+Fig. 1.
+5
+1.4 Cubic and quartic equations 5 5
+ x
+x2
+52
+5
+x
+Fig. 2.
+and generally improved, previous notations and rules of operation. An influential work of this kind was Luca Pacioli’s Summa of 1494, one of the first mathematics books in print (the printing press was invented in about 1445). For example, he used “co” (cosa) for the unknown, introducing symbols for the first 29 (!) of its powers, “p” (piu) for plus and “m” (meno) for minus. Others used Rx (radix) for square root and Rx.3 for cube root. In 1557 Robert Recorde introduced the symbol “=” for equality with the justification that “noe 2 thynges can be moare equalle.” See [7], [13], [17].
+1.4 Cubic and quartic equations
+The Babylonians were solving quadratic equations by about 1600 BC, using essen- tially the equivalent of the quadratic formula. A natural question is therefore whether cubic equations could be solved using similar formulas (see below). Another three thousand years would pass before the answer would be known. It was a great event
